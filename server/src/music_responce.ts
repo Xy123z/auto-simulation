@@ -116,7 +116,7 @@ function playAudio(filePath: string) {
   });
 }
 
-export function askAgain() {
+export async function askAgain() {
   rl.question("\nEnter song name (or 'exit'): ", (answer) => {
     const input = answer.trim();
     if (input.toLowerCase() === "exit") {
