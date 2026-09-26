@@ -116,7 +116,7 @@ function playAudio(filePath: string) {
   });
 }
 
-function askAgain() {
+export function askAgain() {
   rl.question("\nEnter song name (or 'exit'): ", (answer) => {
     const input = answer.trim();
     if (input.toLowerCase() === "exit") {
@@ -130,9 +130,3 @@ function askAgain() {
     }
   });
 }
-
-// Start
-console.log("=================================");
-console.log("   YouTube → MP3 Player");
-console.log("=================================");
-askAgain();
