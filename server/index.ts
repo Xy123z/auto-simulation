@@ -1,4 +1,4 @@
-import "./src/env"; // must load first — see env.ts for why
+import "./src/env"; 
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
