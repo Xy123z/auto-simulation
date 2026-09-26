@@ -1,0 +1,21 @@
+{
+  "name": "auto-simulation",
+  "version": "1.0.0",
+  "description": "auto simulation",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "tsx server/index.ts",
+    "dev": "tsx watch server/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start:built": "node dist/server/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^20.14.0"
+  }
+}
