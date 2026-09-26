@@ -118,7 +118,7 @@ const server = http.createServer(async (req, res) => {
   }
 
   // Music download endpoint
-  if (req.method === "POST" && url.pathname === "/api/music") {
+  if (req.method === "POST" && url.pathname === "/api/music_responce") {
     try {
       const body = await readJsonBody<{ songName: string }>(req);
 
